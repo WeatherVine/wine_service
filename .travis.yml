@@ -15,11 +15,11 @@ script:
 - bundle exec rake
 env:
   global:
-    secure:
+    secure: 
 deploy:
   provider: heroku
   api_key:
-    secure:
+    secure: Pms86w4Z9ypmp3AWy3jBgUW3wwZorpQtNmDdZhhnSzzG5s1PD4/kVxTsyTM5zE80w1MZLcJcqBDpfeYD1KSQveBhfjF2X3pKLv/P3Yf+605GWJhMDbkyoiF4o1zyFqgGrPB0Gwn9yxWKs7w1EQGkJ+si8oWX4CtxK7FMMLQoanaNdBOGm90iOXa4bJ+uACP+SDLx9QUw+BssnXlljUWNC7Bwc8g+g1Ouwm1O+tNYCwFasyMN1NyE3td0/G8xcFB+SYleBQVsgYplTMnVWpQ4PkHWYytbaSd36Y5QtA2wi7EZdyGtK0sW+OgKm2R308rFc11vuz9eIrV2O4xXbNNZIAgTHib0+1UTh7KoNhyy3w9vC3PgQHAQ6OBa4nxc+LSohC5ZVcUZ2OInAY1qIrZWZZ4RCBDJldVckKonKyVis/2LQWLGXIma1E+OQagBXx+Jhx8RemUat6n4ZnTOwnaxq4GitHmL8KVjC6fXh7/YkYze7+4DESk1o3dPxWgyhjWNhzhmbTpjR3qA8KOPl946SyjFmriqJ2eMkzvc90P4sHdeeOKYvjd0FWQNX708zKWapp0oC+7l3cZr5lL8LQaZEqYJurAnha4N4kyIBD3Fsw7wz+Rkw0/INjETwFvAwvMwvAjzuwB2L76DxaXqq1Yp30YnmZc4I8zN2SR1u6/bhTU=
   on:
     repo: WeatherVine/wine_service
     branch: main
