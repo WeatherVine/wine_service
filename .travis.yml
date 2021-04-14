@@ -1,0 +1,26 @@
+language: ruby
+rbenv:
+- 2.5.3
+cache:
+- bundler
+- yarn
+addons:
+  postgresql: 9.6
+before_install:
+- gem install bundler
+- nvm install --lts
+before_script:
+- yarn
+script:
+- bundle exec rake
+env:
+  global:
+    secure:
+deploy:
+  provider: heroku
+  api_key:
+    secure:
+  on:
+    repo: WeatherVine/wine_service
+    branch: main
+  skip_cleanup: "‘true’"
