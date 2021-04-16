@@ -15,4 +15,5 @@ group :development, :test do
   gem 'launchy'
   gem 'rack-test'
   gem 'rake'
+  gem 'faraday'
 end
