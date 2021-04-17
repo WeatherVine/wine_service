@@ -15,33 +15,26 @@ class WineService
     )
   end
 
-  def self.location_and_vintage
-    response = conn.get("/api/pub/wineKeywordSearch/2008%20napa%20valley/#{@page}")
+  def self.location_and_vintage(location, vintage)
+    response = conn.get("/api/pub/wineKeywordSearch/#{vintage}%20n#{location}/#{@@page}")
     search = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.wines
-    require "pry"; binding.pry
-    self.location_and_vintage[:items].each do |wine|
-      require "pry"; binding.pry
-      if wine[:vintage].to_i == 2008
-        # && @@collection_wines.length < 5
-        require "pry"; binding.pry
-        @@collection_wines << wine
-      else
+  def self.wines(location, vintage)
+    wines = location_and_vintage(location, vintage)
+    wines[:items].each do |wine|
+      if @@collection_wines.length == 5
         break
+      elsif wine[:vintage].to_i == vintage.to_i
+        @@collection_wines << wine
       end
     end
-    require "pry"; binding.pry
   end
 
 
-  def self.collection_wines
-    require "pry"; binding.pry
-
+  def self.collection_wines(location, vintage)
     while @@collection_wines.length < 5
-      require "pry"; binding.pry
-      self.wines
+      self.wines(location, vintage)
       self.increase_page
     end
     @@collection_wines
