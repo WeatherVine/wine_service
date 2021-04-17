@@ -5,6 +5,8 @@ gem 'pg'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'json'
+gem 'fast_jsonapi'
+gem 'sinatra-contrib'
 
 group :development, :test do
   gem 'shotgun'
@@ -16,4 +18,5 @@ group :development, :test do
   gem 'rack-test'
   gem 'rake'
   gem 'faraday'
+  gem 'pry'
 end
