@@ -45,12 +45,11 @@ class WineService
     response = conn.get('/api/pub/wineSummary.json') do |req|
       req.params['wine_id'] = id
     end
-    search = JSON.parse(response.body, symbolize_names: true)
+
+    if response.body == "Not Found"
+      "Not Found"
+    else
+      search = JSON.parse(response.body, symbolize_names: true)
+    end
   end
 end
-
-# Altamura = 5a820b7154f765b05c5bd94a
-# Celani = 5b1588fcedcff42611e5db3c
-# Cameron Hughes = 5205521de817460200000002
-# Grgich Hills = 5a7a782f43780f1b2595a471
-# Altamura = 5a820b7154f765b05c5bd94a
