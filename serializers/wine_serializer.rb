@@ -1,6 +1,3 @@
-# DOES NOT WORK - TO BE DELETED IF SINATRA::JSON CAN MEET JSON API AND API CONTRACT
-# REQUIREMENTS
-
 require "fast_jsonapi"
 
 class WinesSerializer
