@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 ruby '2.5.3'
 gem 'sinatra', require: 'sinatra/base'
@@ -7,10 +8,9 @@ gem 'sinatra-activerecord'
 gem 'json'
 gem 'fast_jsonapi'
 gem 'sinatra-contrib'
-gem 'figaro'
-# gem 'figaro', git: 'https://github.com/bpaquet/figaro.git', branch: 'sinatra'
 
 group :development, :test do
+  gem 'figaro', git: 'https://github.com/bpaquet/figaro.git', branch: 'sinatra'
   gem 'shotgun'
   gem 'rspec'
   gem 'rspec-core'
