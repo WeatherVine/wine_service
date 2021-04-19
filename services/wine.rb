@@ -12,7 +12,7 @@ class WineService
   def self.conn
     conn = Faraday.new(
       url: 'https://quiniwine.com',
-      headers: { 'Authorization': ''}
+      headers: { 'Authorization': "Bearer #{ENV['WINE_KEY']}"}
     )
   end
 
