@@ -49,6 +49,18 @@ describe 'Wine API' do
     expect(error[:error]).to eq('Please provide a location and vintage year')
   end
 
+  it 'collection wine returns an error more than location and vintage query params are passed in the search' do
+    get '/wine-data?location=napa valley&vintage=2008&foo=bar'
+
+    expect(last_response).to be_ok
+
+    error = JSON.parse(last_response.body, symbolize_names: true)
+
+    expect(error).to be_a(Hash)
+    expect(error[:error]).to be_a(String)
+    expect(error[:error]).to eq('Please provide only a location and vintage year')
+  end
+
   it 'collection wine returns an errror if location query params is missing' do
     get '/wine-data?vintage=2008'
 
@@ -154,5 +166,17 @@ describe 'Wine API' do
       expect(error[:error]).to be_a(String)
       expect(error[:error]).to eq('Not Found')
     end
+  end
+
+  it 'single wine returns an error when more than id query params is passed in the search' do
+    get '/wine-single?id=5a7a782f43780f1b2595a471&foo=bar'
+
+    expect(last_response).to be_ok
+
+    error = JSON.parse(last_response.body, symbolize_names: true)
+
+    expect(error).to be_a(Hash)
+    expect(error[:error]).to be_a(String)
+    expect(error[:error]).to eq('Please provide only an id')
   end
 end
