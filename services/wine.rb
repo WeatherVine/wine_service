@@ -12,7 +12,7 @@ class WineService
   def self.conn
     conn = Faraday.new(
       url: 'https://quiniwine.com',
-      headers: { 'Authorization': "Bearer #{ENV['WINE_KEY']}"}
+      headers: { 'Authorization': "Bearer #{ENV['WINE_KEY']}" }
     )
   end
 
@@ -46,8 +46,8 @@ class WineService
       req.params['wine_id'] = id
     end
 
-    if response.body == "Not Found"
-      "Not Found"
+    if response.body == 'Not Found'
+      'Not Found'
     else
       search = JSON.parse(response.body, symbolize_names: true)
     end

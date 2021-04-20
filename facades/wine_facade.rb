@@ -19,11 +19,11 @@ class WineFacade
 
   def self.wine_single(id)
     wine = WineService.wine_single(id)
-    
-    if wine != "Not Found"
+
+    if wine != 'Not Found'
       w = W.new(wine)
     else
-      "Not Found"
+      'Not Found'
     end
   end
 end

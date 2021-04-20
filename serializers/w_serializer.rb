@@ -1,4 +1,4 @@
-require "fast_jsonapi"
+require 'fast_jsonapi'
 
 class WSerializer
   include FastJsonapi::ObjectSerializer
