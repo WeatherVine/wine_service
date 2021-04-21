@@ -1,12 +1,4 @@
-require 'sinatra'
-require 'faraday'
-require 'json'
-require './services/wine'
-require './facades/wine_facade'
-require './serializers/wine_serializer'
-require './serializers/w_serializer'
-require 'pry'
-require 'sinatra/json'
+require './helpers/require_helper'
 
 get '/wine-data' do
   if params.empty?

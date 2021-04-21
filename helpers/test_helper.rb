@@ -1,0 +1,5 @@
+require './app/controllers/wine_service_app.rb'
+require 'rspec'
+require 'rack/test'
+require 'pry'
+require 'spec_helper'

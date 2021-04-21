@@ -1,10 +1,5 @@
 # ENV['APP_ENV'] = 'test'
-
-require './wine_service'
-require 'rspec'
-require 'rack/test'
-require 'pry'
-require 'spec_helper'
+require './helpers/test_helper'
 
 describe 'Wine API' do
   include Rack::Test::Methods
