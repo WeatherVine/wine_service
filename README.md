@@ -18,6 +18,8 @@ Weather Vine is an educational app for consumers to connect more deeply with the
 ## Getting Started
 
 To get the web application running, please fork and clone down the repo.
+
+
 `git clone <your@github.account:WeatherVine/front_end.git>`
 
 ### Prerequisites
@@ -26,12 +28,10 @@ To run this application you will need Ruby 2.5.3 and Rails 5.2.5
 
 ### Installing
 
-- Clone the repo
-`git clone git@github.com:WeatherVine/wine_service.git`
 - Install the gem packages  
-`bundle install`
+  - `bundle install`
 - Generate your local `application.yml` file to store the api key and confirm it was added to your `.gitignore`
-`bundle exec figaro install`
+  - `bundle exec figaro install`
 
 ## Running the tests
 RSpec testing suite is utilized for testing this application.
@@ -40,6 +40,7 @@ RSpec testing suite is utilized for testing this application.
 
 ## Service Oriented Architecture
 ![](assets/README-f315b6d0.png)
+- The purpose of this microservice is to facilitate the communication between our Weather Vine back-end application and the Wine API that we are consuming by filtering the response as needed.
 
 ## Other Repos
 - Weather Vine Front-End Application
@@ -50,6 +51,48 @@ RSpec testing suite is utilized for testing this application.
   - [Repo](https://github.com/WeatherVine/weather_service) | [Heroku](https://weather-service-sinatra.herokuapp.com/)
 
 ## Endpoints
+
+##### QuiniWine API
+- Weather Vine has chosen to use Quini Wine Intelligence as the API service due to their available data that best matched Weather Vine's needs. 
+- GET `https://quiniwine.com/api/pub/wineKeywordSearch/duckhorn/0/20?varietal=merlot`
+```json
+{
+   "nextskip": 2,
+   "category": "All",
+   "items": [
+       {
+           "_id": "5f065fb5fbfd6e17acaad294",
+           "id": "5f065fb5fbfd6e17acaad294",
+           "Name": "Duckhorn The Discussion Red 2012",
+           "Winery": "Duckhorn Vineyards",
+           "Area": "Napa Valley",
+           "Province": "California",
+           "Country": "USA",
+           "Varietal": "Cabernet Sauvignon, Merlot",
+           "vintage": "2012",
+           "Style": "",
+           "Type": "Red",
+           "nameClean": "Duckhorn The Discussion Red 2012 Duckhorn Vineyards Cabernet Sauvignon, Merlot"
+       },
+       {
+           "_id": "546e64cf4c6458020000000d",
+           "id": "546e64cf4c6458020000000d",
+           "Name": "Duckhorn",
+           "Winery": "Duckhorn Vineyards",
+           "Area": "Napa Valley",
+           "Province": "",
+           "Country": "USA",
+           "Varietal": "Sauvignon Blanc",
+           "vintage": "2013",
+           "Style": "",
+           "Type": "White"
+       }
+   ]
+}
+```
+
+##### Weather Vine Microservice
+- GET `https://weathervine-wine-service-sinatra.herokuapp.com/api/v1/wine-data?region=#{region}&vintage=#{vintage}`
 
 ## Built With
 - [Sinatra](https://github.com/sinatra/sinatra)
