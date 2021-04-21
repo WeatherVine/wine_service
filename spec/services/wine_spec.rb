@@ -11,7 +11,7 @@ describe 'Wine API' do
 
   it 'obtains a collection of wine objects' do
     VCR.use_cassette('collection_wine') do
-      get '/wine-data?location=napa%20valley&vintage=2008'
+      get '/api/v1/wine-data?location=napa%20valley&vintage=2008'
 
       expect(last_response).to be_ok
 
@@ -34,7 +34,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an error if location and vintage query params are missing' do
-    get '/wine-data'
+    get '/api/v1/wine-data'
 
     expect(last_response).to be_ok
 
@@ -46,7 +46,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an error more than location and vintage query params are passed in the search' do
-    get '/wine-data?location=napa valley&vintage=2008&foo=bar'
+    get '/api/v1/wine-data?location=napa valley&vintage=2008&foo=bar'
 
     expect(last_response).to be_ok
 
@@ -58,7 +58,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an errror if location query params is missing' do
-    get '/wine-data?vintage=2008'
+    get '/api/v1/wine-data?vintage=2008'
 
     expect(last_response).to be_ok
 
@@ -70,7 +70,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an errror if vintage year query params is missing' do
-    get '/wine-data?location=napa valley'
+    get '/api/v1/wine-data?location=napa valley'
 
     expect(last_response).to be_ok
 
@@ -82,7 +82,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an errror if vintage year query params is before 1970' do
-    get '/wine-data?location=napa valley&vintage=1969'
+    get '/api/v1/wine-data?location=napa valley&vintage=1969'
 
     expect(last_response).to be_ok
 
@@ -94,7 +94,7 @@ describe 'Wine API' do
   end
 
   it 'collection wine returns an errror if vintage year query params is after 2021' do
-    get '/wine-data?location=napa valley&vintage=2022'
+    get '/api/v1/wine-data?location=napa valley&vintage=2022'
 
     expect(last_response).to be_ok
 
@@ -107,7 +107,7 @@ describe 'Wine API' do
 
   it 'obtains a single wine' do
     VCR.use_cassette('single_wine') do
-      get '/wine-single?id=5a7a782f43780f1b2595a471'
+      get '/api/v1/wine-single?id=5a7a782f43780f1b2595a471'
 
       expect(last_response).to be_ok
 
@@ -139,7 +139,7 @@ describe 'Wine API' do
   end
 
   it 'single wine returns an error if the id query param is missing' do
-    get '/wine-single'
+    get '/api/v1/wine-single'
 
     expect(last_response).to be_ok
 
@@ -152,7 +152,7 @@ describe 'Wine API' do
 
   it 'single wine returns an error if the id does not return data' do
     VCR.use_cassette('no_data') do
-      get '/wine-single?id=0'
+      get '/api/v1/wine-single?id=0'
 
       expect(last_response).to be_ok
 
@@ -165,7 +165,7 @@ describe 'Wine API' do
   end
 
   it 'single wine returns an error when more than id query params is passed in the search' do
-    get '/wine-single?id=5a7a782f43780f1b2595a471&foo=bar'
+    get '/api/v1/wine-single?id=5a7a782f43780f1b2595a471&foo=bar'
 
     expect(last_response).to be_ok
 

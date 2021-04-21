@@ -7,7 +7,7 @@ class WineServiceApp < Sinatra::Base
 
   set :root, File.expand_path("..", __dir__)
 
-  get '/wine-data' do
+  get '/api/v1/wine-data' do
     if params.empty?
       json ({ error: 'Please provide a location and vintage year' })
     elsif params[:location].nil?
@@ -26,7 +26,7 @@ class WineServiceApp < Sinatra::Base
     end
   end
 
-  get '/wine-single' do
+  get '/api/v1/wine-single' do
     if params.empty?
       json ({ error: 'Please provide an id' })
     elsif params.count < 1 || params.count > 1
