@@ -92,7 +92,7 @@ RSpec testing suite is utilized for testing this application.
 ```
 
 ##### Weather Vine Microservice
-- GET `GEThttps://weathervine-wine-service-sinatra.herokuapp.com/api/v1/wine-data?region=#{region}&vintage=#{vintage}`
+- GET `https://weathervine-wine-service-sinatra.herokuapp.com/api/v1/wine-data?region=#{region}&vintage=#{vintage}`
 
 ## Built With
 - [Sinatra](https://github.com/sinatra/sinatra)
