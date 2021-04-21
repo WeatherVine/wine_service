@@ -9,7 +9,6 @@ Weather Vine is an educational app for consumers to connect more deeply with the
   - [Running the tests](#running-the-tests)
   - [Service Oriented Architecture](#service-oriented-architecture)
   - [Other Repos](#other-repos)
-  - [Database Schema](#database-schema)
   - [Built With](#built-with)
   - [Contributing](#contributing)
   - [Versioning](#versioning)
@@ -30,9 +29,8 @@ To run this application you will need Ruby 2.5.3 and Rails 5.2.5
 
 - Install the gem packages  
 `bundle install`
-
-- Create the database by running the following command in your terminal
-`rails db:{drop,create,migrate}`
+- Generate your local `application.yml` file to store the api key and confirm it was added to your `.gitignore`
+`bundle exec figaro install`
 
 ## Running the tests
 RSpec testing suite is utilized for testing this application.
@@ -50,19 +48,20 @@ RSpec testing suite is utilized for testing this application.
 - Weather Vine Weather Microservice
   - [Repo](https://github.com/WeatherVine/weather_service) | [Heroku](https://weather-service-sinatra.herokuapp.com/)
 
-## Database Schema
-
-
 ## Endpoints
 
 ## Built With
 - Sinatra
 - Ruby
 - RSpec
+- Rbenv
 
 
 ## Versioning
-
+- Sinatra 2.1.0
+- Ruby 2.5.3
+- RSpec 3.10.0
+- Rbev 1.1.2
 
 ## Authors
 - **Adam Bowers**
