@@ -1,5 +1,6 @@
 require 'faraday'
 require 'json'
+require 'figaro/sinatra'
 
 class WineService
   @@page = 0
