@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer ENV['WINE_KEY']
+      - Bearer ups39uhsv7zc2a9jvkb1
       User-Agent:
       - Faraday v1.4.1
       Accept-Encoding:
@@ -30,12 +30,12 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 19 Apr 2021 00:25:21 GMT
+      - Wed, 21 Apr 2021 21:35:46 GMT
       Etag:
       - W/"a91-EFeia3xhA25svVgtglVWG9Dk/rQ"
       Set-Cookie:
-      - XSRF-TOKEN=eur0bhzranlmyv4kao8z3o0f; Path=/
-      - connect.sid=s%3A2OuCFzXJwOufDV3D1CODurfTAZyrA9Ix.s%2Be2m3%2FwNZhO3N907btIOvz%2F2oU4mE2DXy7M5qQem3o;
+      - XSRF-TOKEN=jm51pfah9u614b2ogxjgea7w; Path=/
+      - connect.sid=s%3A024NmDpy3-t5iVi8nm57-3vpx5tOS_OL.A3oyf8VzXwCbK%2B5vFGxe%2FabZ5mm7VTejln0JkB0Kn%2Bg;
         Path=/; HttpOnly
       Vary:
       - Accept
@@ -47,7 +47,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJuZXh0c2tpcCI6MTAsImNhdGVnb3J5IjoiQWxsIiwiaXRlbXMiOlt7Il9pZCI6IjVhZDc3ZDM5MTI4Y2FhYmI3ZGIwMjg2OSIsImlkIjoiNWFkNzdkMzkxMjhjYWFiYjdkYjAyODY5IiwiTmFtZSI6IkhhcmxhbiBFc3RhdGUgMjAwMSIsIldpbmVyeSI6IkhhcmxhbiBFc3RhdGUiLCJBcmVhIjoiTmFwYSBWYWxsZXkiLCJQcm92aW5jZSI6IkNhbGlmb3JuaWEiLCJDb3VudHJ5IjoiVVNBIiwiVmFyaWV0YWwiOiJSZWQgQm9yZGVhdXggQmxlbmQiLCJ2aW50YWdlIjoiMjAwMSIsIlN0eWxlIjoiIiwiVHlwZSI6IlJlZCJ9LHsiX2lkIjoiNWFkNzdkMzkxMjhjYWFiYjdkYjAyOTEwIiwiaWQiOiI1YWQ3N2QzOTEyOGNhYWJiN2RiMDI5MTAiLCJOYW1lIjoiU2lsdmVyIE9hayBDYWJlcm5ldCBTYXV2aWdub24gMjAwMiIsIldpbmVyeSI6IlNpbHZlciBPYWsiLCJBcmVhIjoiTmFwYSBWYWxsZXkiLCJQcm92aW5jZSI6IkNhbGlmb3JuaWEiLCJDb3VudHJ5IjoiVVNBIiwiVmFyaWV0YWwiOiJDYWJlcm5ldCBTYXV2aWdub24iLCJ2aW50YWdlIjoiMjAwMiIsIlN0eWxlIjoiIiwiVHlwZSI6IlJlZCJ9LHsiX2lkIjoiNWE3YjhmMGQ0Mzc4MGYxYjI1OTVhNGE1IiwiaWQiOiI1YTdiOGYwZDQzNzgwZjFiMjU5NWE0YTUiLCJOYW1lIjoiUGV0ZXIgTWljaGFlbCDigJ1MZXMgUGF2b3Rz4oCdIENhYmVybmV0IFNhdXZpZ25vbiAyMDA1LzIwMDgiLCJXaW5lcnkiOiJQZXRlciBNaWNoYWVsIFdpbmVyeSAgJDM5NSIsIkFyZWEiOiJOYXBhIFZhbGxleSIsIlByb3ZpbmNlIjoiIiwiQ291bnRyeSI6IlVTQSIsIlZhcmlldGFsIjoiQ2FiZXJuZXQgU2F1dmlnbm9uIiwidmludGFnZSI6IjIwMDUiLCJTdHlsZSI6IiIsIlR5cGUiOiJSZWQifSx7Il9pZCI6IjVhZDc3ZDM5MTI4Y2FhYmI3ZGIwMjkxMSIsImlkIjoiNWFkNzdkMzkxMjhjYWFiYjdkYjAyOTExIiwiTmFtZSI6IlNpbHZlciBPYWsgQ2FiZXJuZXQgU2F1dmlnbm9uIDIwMDEiLCJXaW5lcnkiOiJTaWx2ZXIgT2FrIiwiQXJlYSI6Ik5hcGEgVmFsbGV5IiwiUHJvdmluY2UiOiJDYWxpZm9ybmlhIiwiQ291bnRyeSI6IlVTQSIsIlZhcmlldGFsIjoiQ2FiZXJuZXQgU2F1dmlnbm9uIiwidmludGFnZSI6IjIwMDEiLCJTdHlsZSI6IiIsIlR5cGUiOiJSZWQifSx7Il9pZCI6IjVhZDc3ZDM5MTI4Y2FhYmI3ZGIwMjkwZiIsImlkIjoiNWFkNzdkMzkxMjhjYWFiYjdkYjAyOTBmIiwiTmFtZSI6IlNpbHZlciBPYWsgQ2FiZXJuZXQgU2F1dmlnbm9uIDIwMDQiLCJXaW5lcnkiOiJTaWx2ZXIgT2FrIiwiQXJlYSI6Ik5hcGEgVmFsbGV5IiwiUHJvdmluY2UiOiJDYWxpZm9ybmlhIiwiQ291bnRyeSI6IlVTQSIsIlZhcmlldGFsIjoiQ2FiZXJuZXQgU2F1dmlnbm9uIiwidmludGFnZSI6IjIwMDQiLCJTdHlsZSI6IiIsIlR5cGUiOiJSZWQifSx7Il9pZCI6IjVhZDc3ZDM5MTI4Y2FhYmI3ZGIwMjg2NyIsImlkIjoiNWFkNzdkMzkxMjhjYWFiYjdkYjAyODY3IiwiTmFtZSI6IkhhcmxhbiBFc3RhdGUgMjAwMyIsIldpbmVyeSI6IkhhcmxhbiBFc3RhdGUiLCJBcmVhIjoiTmFwYSBWYWxsZXkiLCJQcm92aW5jZSI6IkNhbGlmb3JuaWEiLCJDb3VudHJ5IjoiVVNBIiwiVmFyaWV0YWwiOiJSZWQgQm9yZGVhdXggQmxlbmQiLCJ2aW50YWdlIjoiMjAwMyIsIlN0eWxlIjoiIiwiVHlwZSI6IlJlZCJ9LHsiX2lkIjoiNWE4MjBiNzE1NGY3NjViMDVjNWJkOTRhIiwiaWQiOiI1YTgyMGI3MTU0Zjc2NWIwNWM1YmQ5NGEiLCJOYW1lIjoiQWx0YW11cmEgQ2FiZXJuZXQgU2F1dmlnbm9uIDIwMDgiLCJXaW5lcnkiOiJBbHRhbXVyYSAgJDE1MCIsIkFyZWEiOiJOYXBhIFZhbGxleSIsIlByb3ZpbmNlIjoiIiwiQ291bnRyeSI6IlVTQSIsIlZhcmlldGFsIjoiQ2FiZXJuZXQgU2F1dmlnbm9uIiwidmludGFnZSI6IjIwMDgiLCJTdHlsZSI6IiIsIlR5cGUiOiJSZWQifSx7Il9pZCI6IjViMTU4OGZjZWRjZmY0MjYxMWU1ZGIzYyIsImlkIjoiNWIxNTg4ZmNlZGNmZjQyNjExZTVkYjNjIiwiTmFtZSI6IkNlbGFuaSBGYW1pbHkgQ2FiZXJuZXQgU2F1dmlnbm9uIDIwMDgiLCJXaW5lcnkiOiJDZWxhbmkgRmFtaWx5IFZpbmV5YXJkcyIsIkFyZWEiOiJOYXBhIFZhbGxleSIsIlByb3ZpbmNlIjoiIiwiQ291bnRyeSI6IlVTQSIsIlZhcmlldGFsIjoiQ2FiZXJuZXQgU2F1dmlnbm9uIiwidmludGFnZSI6IjIwMDgiLCJTdHlsZSI6IiIsIlR5cGUiOiJSZWQifSx7Il9pZCI6IjUyMDU1MjFkZTgxNzQ2MDIwMDAwMDAwMiIsImlkIjoiNTIwNTUyMWRlODE3NDYwMjAwMDAwMDAyIiwiTmFtZSI6IkNhbWVyb24gSHVnaGVzIExvdCAyMDAgMjAwOCBDYWJlcm5ldCBTYXV2aWdub24iLCJXaW5lcnkiOiJDYW1lcm9uIEh1Z2hlcyBMb3QgMjAwIiwiQXJlYSI6Ik5hcGEiLCJDb3VudHJ5IjoiVVNBIiwiVmFyaWV0YWwiOiJDYWJlcm5ldCBTYXV2aWdub24iLCJ2aW50YWdlIjoiMjAwOCIsIlN0eWxlIjoiIiwiVHlwZSI6IlJlZCJ9LHsiX2lkIjoiNWE3YTc4MmY0Mzc4MGYxYjI1OTVhNDcxIiwiaWQiOiI1YTdhNzgyZjQzNzgwZjFiMjU5NWE0NzEiLCJOYW1lIjoiR3JnaWNoIEhpbGxzIOKAnEVzdGF0ZSBHcm93buKAnSAyMDA4IiwiV2luZXJ5IjoiR3JnaWNoIEhpbGxzIEVzdGF0ZSAgJDgwIiwiQXJlYSI6Ik5hcGEgVmFsbGV5IiwiUHJvdmluY2UiOiIiLCJDb3VudHJ5IjoiVVNBIiwiVmFyaWV0YWwiOiJaaW5mYW5kZWwiLCJ2aW50YWdlIjoiMjAwOCIsIlN0eWxlIjoiIiwiVHlwZSI6IlJlZCJ9XX0=
-  recorded_at: Mon, 19 Apr 2021 00:25:21 GMT
+  recorded_at: Wed, 21 Apr 2021 21:35:46 GMT
 - request:
     method: get
     uri: https://quiniwine.com/api/pub/wineKeywordSearch/2008%20napa%20valley/10
@@ -56,7 +56,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer ENV['WINE_KEY']
+      - Bearer ups39uhsv7zc2a9jvkb1
       User-Agent:
       - Faraday v1.4.1
       Accept-Encoding:
@@ -78,12 +78,12 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 19 Apr 2021 00:25:21 GMT
+      - Wed, 21 Apr 2021 21:35:47 GMT
       Etag:
       - W/"a63-56iGOQkU9A49B3heav7MqXUzXE8"
       Set-Cookie:
-      - XSRF-TOKEN=h0u9wb5hnvyijspfqfbwo96o; Path=/
-      - connect.sid=s%3AQKCwJ6Z5gHzBjrge3Cp6at9YbHGYqUvJ.Elcjn7yhazDvc2qEdQb%2BqYFgy4P9kEwS5Vi1vmC%2B3eA;
+      - XSRF-TOKEN=0j5ethglga7gzwy89ur5cbph; Path=/
+      - connect.sid=s%3A09m3pGVM2a1iD_QDVWVvP0ugKWe-Hw2Y.umes1FRps2CtDTYY%2FdmWMQXNmovmKzHqjBJbTb4ZS3s;
         Path=/; HttpOnly
       Vary:
       - Accept
@@ -113,5 +113,5 @@ http_interactions:
         Valley","Province":"","Country":"USA","Varietal":"Rare Red Blend","vintage":"2008","Style":"","Type":"Red"},{"_id":"5a8f0f57d5f6fbac5f9ac1d0","id":"5a8f0f57d5f6fbac5f9ac1d0","Name":"Sterling
         Vineyards Reserve Cabernet Sauvignon 2001","Winery":"Sterling Vineyards","Area":"Napa
         Valley","Province":"CA","Country":"USA","Varietal":"Cabernet Sauvignon","vintage":"2001","Style":"","Type":"Red"}]}'
-  recorded_at: Mon, 19 Apr 2021 00:25:21 GMT
+  recorded_at: Wed, 21 Apr 2021 21:35:47 GMT
 recorded_with: VCR 6.0.0

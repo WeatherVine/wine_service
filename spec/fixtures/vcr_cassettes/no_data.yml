@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer ENV['WINE_KEY']
+      - Bearer ups39uhsv7zc2a9jvkb1
       User-Agent:
       - Faraday v1.4.1
       Accept-Encoding:
@@ -30,12 +30,12 @@ http_interactions:
       Content-Type:
       - text/plain; charset=utf-8
       Date:
-      - Mon, 19 Apr 2021 00:25:22 GMT
+      - Wed, 21 Apr 2021 21:35:47 GMT
       Etag:
       - W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
       Set-Cookie:
-      - XSRF-TOKEN=5fqvzx6xy1lz891jwptmnfza; Path=/
-      - connect.sid=s%3A0l6A3z3gA27Y1CnsjNHCxRVRPYmNVuST.6XItXxqDXE6q8q8DGumaP0yzNAiWqzpcSB5YA6h3u50;
+      - XSRF-TOKEN=q1h48epwh15i8s756ysksnv6; Path=/
+      - connect.sid=s%3AeCPrYE8_anNX6KWWBm4Z0rJk1DbpBdNZ.jKR%2B7ZfBdvmc8QHyukv%2FnLmucQ8yc1BEq0Y6afOqOYU;
         Path=/; HttpOnly
       Content-Length:
       - '9'
@@ -44,5 +44,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: Not Found
-  recorded_at: Mon, 19 Apr 2021 00:25:22 GMT
+  recorded_at: Wed, 21 Apr 2021 21:35:47 GMT
 recorded_with: VCR 6.0.0
