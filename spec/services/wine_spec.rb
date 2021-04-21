@@ -5,12 +5,13 @@ describe 'Wine API' do
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    WineServiceApp
+    # Sinatra::Application
   end
 
   it 'obtains a collection of wine objects' do
     VCR.use_cassette('collection_wine') do
-      get '/wine-data?location=napa valley&vintage=2008'
+      get '/wine-data?location=napa%20valley&vintage=2008'
 
       expect(last_response).to be_ok
 
