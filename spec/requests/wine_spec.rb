@@ -11,7 +11,7 @@ describe 'Wine API' do
 
   it 'obtains a collection of wine objects' do
     VCR.use_cassette('collection_wine') do
-      get '/api/v1/wine-data?location=napa%20valley&vintage=2008'
+      get '/api/v1/wine-data?location=napa valley&vintage=2008'
 
       expect(last_response).to be_ok
 
