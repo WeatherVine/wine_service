@@ -42,7 +42,6 @@ class WineService
   end
 
   def self.wine_single(id)
-    # '/api/pub/wineSummary.json?wine_id=5f065fb5fbfd6e17acaad294'
     response = conn.get('/api/pub/wineSummary.json') do |req|
       req.params['wine_id'] = id
     end
