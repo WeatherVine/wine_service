@@ -3,6 +3,6 @@ Bundler.require
 
 $LOAD_PATH.unshift(File.expand_path("app", __dir__))
 
-require 'app/controllers/wine_service_app'
+require './app/controllers/wine_service_app'
 
 run WineServiceApp
