@@ -18,6 +18,7 @@ env:
     secure:
 deploy:
   provider: heroku
+  app: wine-service-sinatra
   on:
     repo: WeatherVine/wine_service
     branch: main
