@@ -8,9 +8,9 @@ gem 'json'
 gem 'fast_jsonapi'
 gem 'sinatra-contrib'
 gem 'faraday'
+gem 'figaro', git: 'https://github.com/bpaquet/figaro.git', branch: 'sinatra'
 
 group :development, :test do
-  gem 'figaro', git: 'https://github.com/bpaquet/figaro.git', branch: 'sinatra'
   gem 'shotgun'
   gem 'rspec'
   gem 'rspec-core'
