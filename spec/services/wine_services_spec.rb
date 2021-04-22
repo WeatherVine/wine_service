@@ -1,5 +1,4 @@
 require './helpers/test_helper'
-# require './app/services/wine'
 
 describe 'Wine Service API' do
   include Rack::Test::Methods
@@ -36,7 +35,7 @@ describe 'Wine Service API' do
       end
     end
 
-    it "::wine_single can return a single wine" do
+    it '::wine_single can return a single wine' do
       VCR.use_cassette('single_wine') do
         result = WineService.wine_single('5a7a782f43780f1b2595a471')
 
@@ -68,21 +67,3 @@ describe 'Wine Service API' do
     end
   end
 end
-
-
-
-  # it "::weather_connection" do
-  #   wc = WeatherService.weather_connection
-  #
-  #   expect(wc).to be_a(Faraday::Connection)
-  # end
-  # it "::data_call" do
-  #   VCR.use_cassette('raw_data') do
-  #     res = WeatherService.data_call('napa', '2018')
-  #     expect(res.length).to eq(11)
-  #     expect(res).to be_an(Array)
-  #     expect(res[0]).to be_a(Hash)
-  #     expect(res[0].length).to eq(1)
-  #     expect(res[0][:data].length).to eq(2)
-  #     expect(res[0][:data][:weather].length).to eq(35)
-  #     expect(res[10][:data][:weather].length).to eq(15)
