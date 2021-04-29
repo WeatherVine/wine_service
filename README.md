@@ -1,7 +1,9 @@
 # Weather Vine Wine Microservice
 
 ## About this Project
-Weather Vine is an educational app for consumers to connect more deeply with the wine they enjoy. Explore wines from a region and see how the climate has influenced the very wine one drinks!   
+Weather Vine is an educational app for consumers to connect more deeply with the wine they enjoy. Explore wines from a region and see how the climate has influenced the very wine one drinks!
+
+Wine data graciously provided by Quini Wine through their [Wine Search API](https://quiniwine.com/developers).
 
 ## Table of Contents
 
